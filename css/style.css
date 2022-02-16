@@ -150,6 +150,7 @@ i.edit-cad{
 .input-wrapper-qtd-number input,
 .cad-number-and-name input{
     width: 100%;
+    max-width: 230px;
     padding: 14px;
     outline: none;
     border-radius: 4px;
