@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    scrollbar-width: auto;
+    scrollbar-color: #05c1ff #eeeded;
+}
+
+*::-webkit-scrollbar {
+width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+background: #eeeded;
+}
+
+*::-webkit-scrollbar-thumb {
+background: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);;
+border-radius: 5px;
+border: 2px solid #ffffff;
+}
+
+main,.wrapper{
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper{
+    display: flex;
+}
+.one{
+    width: 25%;
+    height: 100vh;
+}
+.top-one{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 21px 13px -30px #6f86d6;
+}
+.bot-one{
+    padding: 0px 80px;
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:21px 0px 13px -30px #6f86d6;
+}
+.btn-menu-wrapper{
+    display: inline-block;
+}
+.two{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top-two{
+    height: 15%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    box-shadow:0px 21px 13px -30px#6f86d6;
+}
+.top-two h1{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+    margin: 0 15px;
+}
+.bot-two{
+    overflow: auto;
+    height: 85%;
+    padding: 35px;
+}
+.cad-number-and-name input[type=submit],
+.btn-menu-wrapper button,
+.reset,
+.sortear,
+.last-winners{
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 16px 0;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+.menu > .btns-wrapper > button:not(:first-child){
+    margin-top: 15px !important;
+}
+.btn-menu-wrapper button{
+    margin-top: 0;
+    padding: 16px 25px;
+}
+.input-random-number input:hover{
+    filter: brightness(110%);
+}
+.wrapper-numbers{
+    display: flex;
+    flex-wrap: wrap;
+}
+.number-single{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 4px;
+    width: 100px;
+    margin: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.number-single i.del-cad,
+.winner i,
+.menu i,
+.modal-last-winners i.close-modal-winners{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    color: #48c6ef;
+    cursor: pointer;
+}
+i.edit-cad{
+    cursor: pointer;
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    color: #48c6ef;
+}
+.number-single p.bold{
+    font-size: 23px;
+    font-weight: bold;
+}
+.number-single p:last-child{
+    margin-top: 10px;
+    word-break: break-all;
+}
+.input-wrapper-qtd-number input,
+.cad-number-and-name input{
+    width: 100%;
+    padding: 14px;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    margin-top: 15px;
+}
+.cad-number-and-name input:not(:first-child){
+    margin-top: 15px !important;
+}
+.input-wrapper-qtd-number input[type=submit]{
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.wrapper-cad{
+    display: none;
+}
+.winner,
+.menu,
+.modal-last-winners{
+    display: none;
+    text-align: center;
+    width: 100%;
+    max-width: 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px 20px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    z-index: 10;
+}
+.menu{
+    max-width: 270px;
+}
+.modal-last-winners{
+    padding: 20px 30px;
+    max-height: 300px;
+    overflow-y:auto;
+}
+.modal-last-winners h3{
+    font-size: 26px;
+    margin-bottom: 27px;
+}
+.winner-single{
+    display: flex;
+    justify-content: space-between;
+}
+.winner-single:not(:first-child){
+    margin-top: 15px;
+}
+.winner-single i{
+    cursor: pointer;
+    color: #48c6ef;
+}
+.winner p:first-child{
+    font-weight: 500;
+    color: #6f86d6;
+    font-size: 25px;
+}
+.winner h3{
+    color: #6f86d6;
+    margin-top: 20px;
+    font-size: 42px;
+}
+.winner p:last-child{
+    margin-top: 20px;
+    color: #6f86d6;
+}
+.btns-wrapper{
+    width: 100%;
+}
+
+
